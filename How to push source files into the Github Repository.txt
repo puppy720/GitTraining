@@ -1,0 +1,71 @@
+process to push the source code in to the github repository.
+
+nimmalas@MAVHP122038 MINGW64 ~
+$ ls
+'3D Objects'/         Downloads/              'My Documents'@                                                                                 Pictures/            'Start Menu'@                     ntuser.ini
+ AppData/             Favorites/               NTUSER.DAT                                                                                     Practise-Workspace/   Templates@                       source/
+'Application Data'@   IdeaProjects/            NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf                                        PrintHood@            Videos/
+ Contacts/            IntelGraphicsProfiles/   NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms   Recent@               eclipse/
+ Cookies@             Links/                   NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms  'Saved Games'/        'mcafee dlp quarantined files'/
+ Desktop/            'Local Settings'@         NetHood@                                                                                       Searches/             ntuser.dat.LOG1
+ Documents/           Music/                   OneDrive/                                                                                      SendTo@               ntuser.dat.LOG2
+
+nimmalas@MAVHP122038 MINGW64 ~
+$ cd C:\shiva
+
+nimmalas@MAVHP122038 MINGW64 /c/shiva (master)
+$ ls
+abc  cva  shiva.txt
+
+nimmalas@MAVHP122038 MINGW64 /c/shiva (master)
+$ git init
+Reinitialized existing Git repository in C:/shiva/.git/
+
+nimmalas@MAVHP122038 MINGW64 /c/shiva (master)
+$ git remote add origin https://github.com/puppy720/GitTraining.git
+
+nimmalas@MAVHP122038 MINGW64 /c/shiva (master)
+$ git remote -v
+origin  https://github.com/puppy720/GitTraining.git (fetch)
+origin  https://github.com/puppy720/GitTraining.git (push)
+
+nimmalas@MAVHP122038 MINGW64 /c/shiva (master)
+$ git add .
+
+nimmalas@MAVHP122038 MINGW64 /c/shiva (master)
+$ git commit -m "First Commit"
+[master b0fb640] First Commit
+ Committer: Nimmala Shiva Shankar <nimmalas@maveric-systems.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 cva
+
+nimmalas@MAVHP122038 MINGW64 /c/shiva (master)
+$ git push origin master
+info: please complete authentication in your browser...
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 671 bytes | 671.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/puppy720/GitTraining/pull/new/master
+remote:
+To https://github.com/puppy720/GitTraining.git
+ * [new branch]      master -> master
+
+nimmalas@MAVHP122038 MINGW64 /c/shiva (master)
+$
